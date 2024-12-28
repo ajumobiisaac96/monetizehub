@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #f8f9fa;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo{
+    font-family: 'poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.navbar .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .menu li{
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.navbar .menu li:hover{
+    color: #FF007F;
+}
+
+.signup-btn{
+    padding: 10px 20px;
+    background: linear-gradient(to left top, #FF007F, #FF6700);
+    color: #fff !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.signup-btn:hover{
+    background: linear-gradient(to right bottom, #FF007F, #FF6700);
+}
+
+.menu-list{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
