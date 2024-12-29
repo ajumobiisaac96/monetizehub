@@ -1,11 +1,11 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,20 +14,20 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .logo{
+.navbar .logo {
     font-family: 'poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     color: #333;
 }
 
-.navbar .menu{
+.navbar .menu-icon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar .menu li{
+.navbar .menu li {
     margin: 0px 10px;
     text-decoration: none;
     color: #333;
@@ -37,11 +37,11 @@
     cursor: pointer;
 }
 
-.navbar .menu li:hover{
+.navbar .menu li:hover {
     color: #FF007F;
 }
 
-.signup-btn{
+.signup-btn {
     padding: 10px 20px;
     background: linear-gradient(to left top, #FF007F, #FF6700);
     color: #fff !important;
@@ -52,12 +52,39 @@
     font-weight: 500;
 }
 
-.signup-btn:hover{
+.signup-btn:hover {
     background: linear-gradient(to right bottom, #FF007F, #FF6700);
 }
 
-.menu-list{
-    display: none;
-    justify-content: center;
+.sticky-nav {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+    background-color: #f8f9fa; /* Ensure the background is visible */
+}
+
+.menu-icon {
+    display: flex;
     align-items: center;
+}
+
+.menu-icon h1 {
+    margin-right: 300px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.bar {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.bar:hover {
+    color: #FF007F;
 }
