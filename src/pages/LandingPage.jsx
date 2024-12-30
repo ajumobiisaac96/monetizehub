@@ -5,18 +5,19 @@ import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome C
 import HeroBanner from '../assets/images/hero-banner.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMessage } from '@fortawesome/free-solid-svg-icons';
+import {Link} from 'react-router-dom';
 
 const LandingPage = () => {
   return (
     <div>
       <NavBar />
-      <main>
+      <main className='landing-page'>
         <div className="hero-section">
           <div className="hero-left-side">
             <h5><span>.</span>MonetizeHub Marketing Agency</h5>
             <h1>We are available for marketing</h1>
             <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorem quasi dicta a, suscipit minima dolorum corporis expedita eveniet repudiandae tempore quibusdam vitae voluptatum doloremque quo labore excepturi blanditiis amet.</h6>
-            <button className='signup-btn'>Get Started</button>
+            <Link to={"/Dashboard"} ><button className='signup-btn'>Get Started</button></Link>
           </div>
           <div className="hero-right-side">
             <img src={HeroBanner} alt="" />
@@ -25,7 +26,7 @@ const LandingPage = () => {
 
         <div className="services">
           <h1>Services We Provided</h1>
-          <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet corporis libero ipsam facere quasi accusantium, eos ad officiis nostrum velit?</h6>
+          <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br /> Eveniet corporis libero ipsam facere quasi accusantium, eos ad officiis nostrum velit?</h6>
 
           <div className="services-card">
             <div className="cards">
@@ -50,12 +51,12 @@ const LandingPage = () => {
                   borderRadius: '50%', 
                   fontSize: '16px', 
                   color: 'white', 
-                  backgroundColor: 'darkgreen', 
+                  backgroundColor: '#6610f2', 
                   padding: '10px', 
                   display: 'inline-block' 
                 }} 
               />
-              <h2>Content Marketing</h2>
+              <h2>Personal Branding</h2>
               <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel rem natus, itaque sint earum ratione!</h6>
             </div>
             <div className="cards">
@@ -65,12 +66,12 @@ const LandingPage = () => {
                   borderRadius: '50%', 
                   fontSize: '16px', 
                   color: 'white', 
-                  backgroundColor: 'darkgreen', 
+                  backgroundColor: '#ffb700', 
                   padding: '10px', 
                   display: 'inline-block' 
                 }} 
               />
-              <h2>Social Media Management</h2>
+              <h2>Monetization tools</h2>
               <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel rem natus, itaque sint earum ratione!</h6>
             </div>
             <div className="cards">
@@ -80,12 +81,12 @@ const LandingPage = () => {
                   borderRadius: '50%', 
                   fontSize: '16px', 
                   color: 'white', 
-                  backgroundColor: 'darkgreen', 
+                  backgroundColor: '#fc3549', 
                   padding: '10px', 
                   display: 'inline-block' 
                 }} 
               />
-              <h2>Email Marketing</h2>
+              <h2>Cloud Storage</h2>
               <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel rem natus, itaque sint earum ratione!</h6>
             </div>
             <div className="cards">
@@ -95,7 +96,7 @@ const LandingPage = () => {
                   borderRadius: '50%', 
                   fontSize: '16px', 
                   color: 'white', 
-                  backgroundColor: 'darkgreen', 
+                  backgroundColor: '#00d280', 
                   padding: '10px', 
                   display: 'inline-block' 
                 }} 
@@ -110,12 +111,12 @@ const LandingPage = () => {
                   borderRadius: '50%', 
                   fontSize: '16px', 
                   color: 'white', 
-                  backgroundColor: 'darkgreen', 
+                  backgroundColor: '#ff612f', 
                   padding: '10px', 
                   display: 'inline-block' 
                 }} 
               />
-              <h2>Web Development</h2>
+              <h2>Analytics</h2>
               <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel rem natus, itaque sint earum ratione!</h6>
             </div>
           </div>

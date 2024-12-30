@@ -1,112 +1,281 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-*{
-    padding: 0px;
-    margin:0px;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'poppins' 'sanserif';
+    font-family: 'Poppins', sans-serif;
 }
 
-.hero-section{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+body {
     background-color: #f8f9fa;
-    padding: 100px 0;
 }
 
-.hero-left-side h5{
-    font-family: 'poppins';
-    text-align: left;
-    font-size: 12px;
-    font-size: medium;
-    font-weight: 300;
-    margin: 5px;
-}
-
-.hero-left-side h1{
-    font-size: 55px;
-    text-align: left;
-    margin: 5px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-.hero-left-side h6{
-    color: #6e6e6e;
-    font-size: 15px;
-    font-weight: 400;
-    margin: 5px;
-}
-
-.hero-left-side{
-    width: 1000px;
-    text-align: left;
-    padding: 50px;
-    margin-left: 80px;
-}
-
-.hero-right-side img{
+.landing-page {
     width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    width: 100%;
+    max-width: 1200px; /* Set a max-width for the hero section */
+}
+
+.hero-left-side {
+    flex: 1;
+    padding-right: 20px;
 }
 
 .hero-left-side span{
-    height: 10px;
-    background-color: red;
-    color: red;
+    color: #FF6700;
+    background-color: #FF6700;
     margin-right: 10px;
 }
 
-.hero-left-side button{
-    margin: 5px;
+.hero-left-side h5 {
+    font-size: 1.2rem;
+    color: #ff6700;
 }
 
-.services{
+.hero-left-side h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+.hero-left-side h6 {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hero-right-side {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-right-side img {
+    max-width: 100%;
+    height: auto;
+}
+
+.signup-btn {
+    background: linear-gradient(to right bottom, #FF007F, #FF6700);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background: linear-gradient(to right bottom, #FF4500, #FF6700);
+}
+
+.services {
     text-align: center;
-    font-size: 22px;
+    padding: 50px 0;
+    width: 100%;
+    max-width: 800px; /* Set a max-width for the services section */
+    margin: 0 auto; /* Center the services section */
 }
 
-.services h6{
-    color: #6e6e6e;
-    font-weight: 400;
+.services h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.services-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+.services h6 {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
 }
 
 .cards {
     background-color: #fff;
-    height: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cards:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin-bottom: 20px; /* Add margin to the bottom for spacing */
 }
 
 .cards h2 {
     font-size: 1.5rem;
-    margin: 10px 0;
-    letter-spacing: 1px;
+    color: #333;
+    margin: 20px 0;
 }
 
 .cards h6 {
     font-size: 1rem;
-    color: #6e6e6e;
-    margin: 10px 0;
-    letter-spacing: 0.5px;
+    color: #666;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 0px to 575px) */
+@media (max-width: 575px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left-side {
+        padding-right: 0;
+    }
+
+    .hero-right-side {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left-side {
+        padding-right: 0;
+    }
+
+    .hero-right-side {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left-side {
+        padding-right: 0;
+    }
+
+    .hero-right-side {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero-section {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hero-left-side {
+        padding-right: 20px;
+    }
+
+    .hero-right-side {
+        text-align: right;
+        margin-top: 0;
+    }
+
+    .cards-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .cards {
+        width: 300px;
+        margin-bottom: 0;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .hero-section {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hero-left-side {
+        padding-right: 20px;
+    }
+
+    .hero-right-side {
+        text-align: right;
+        margin-top: 0;
+    }
+
+    .cards-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .cards {
+        width: 300px;
+        margin-bottom: 0;
+    }
 }
 
 .cards .faMessage {

@@ -1,0 +1,47 @@
+.sidebar-info{
+width: 300px;
+padding: 20px;
+background: #f8f9fa;
+margin-left: 110px;
+height: 100vh;
+box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1); /* Add box shadow to the right */
+}
+
+.sidebar-info h3{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar-info h3:hover{
+    color: #fff ;
+    background: linear-gradient(to right bottom, #FF007F, #FF6700);
+    transition: 0.2s;
+}
+
+
+.dashboard-info{
+    display: flex;
+}
+
+.sidebar-info .active{
+    color: #fff ;
+    background: linear-gradient(to right bottom, #FF007F, #FF6700);
+}
+
+.dashboard-internal-info .user-stat, .engagement-score, .revenue-gen, .profile{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.dashboard-internal-info .user-stat,.engagement-score, .revenue-gen, .profile p{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
