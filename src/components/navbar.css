@@ -10,7 +10,7 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
     align-items: center;
     padding: 20px 10%;
     background-color: #f8f9fa;
@@ -33,6 +33,14 @@
     justify-content: space-between;
     width: 100px;
     height: 20px;
+}
+
+.menu .bar{
+    cursor: pointer;
+}
+
+.menu .bar:hover{
+    color: #FF4500;
 }
 
 /* Full navbar styles */
@@ -63,26 +71,31 @@
     background-color: #fff;
     border-radius: 2px;
     transition: all 0.3s ease;
+
 }
 
 /* Extra small devices (phones, 0px to 575px) */
 @media (max-width: 575px) {
     .menu-icon {
-        display: flex; /* Show on mobile */
+        width: 10px !important;
     }
 
     .menu-icon .hamburger{
-        color: red;
-        display: flex;
-        width: auto;
-    }
+        display: flex !important;
+        width: auto !important;
+        justify-content: space-between !important;
+        }
 
-    .nav-bar-logo{
+        .nav-bar-logo{
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-    }
+        }
+
+        .navbar .logo {
+        justify-content: space-between;
+        }
 
     .menu {
         display: none; /* Hide on mobile */
@@ -109,7 +122,7 @@
     }
 
     .menu-icon .hamburger{
-        display: flex;
+        display: flex !important ;
         margin-left: 200px;
     }
 
@@ -134,7 +147,11 @@
 /* Medium devices (tablets, 768px to 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
     .menu-icon {
-        display: flex; /* Show on medium devices */
+        width: 10px !important;
+    }
+
+    .nav-bar-logo{
+        width: 100%;
     }
 
     .menu-icon .hamburger{

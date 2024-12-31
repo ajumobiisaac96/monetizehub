@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa'; // Importing the FaBars icon for the hamburger
 import './NavBar.css';
+import {Link} from 'react-router-dom'
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // For toggling the menu
@@ -12,7 +13,7 @@ const NavBar = () => {
   return (
     <div className="navbar sticky-nav">
       <div className='nav-bar-logo'>
-        <h1 className="logo">MonetizeHub</h1>
+        <Link to={'/'} ><h1 className="logo">MonetizeHub</h1></Link>
         <div className="menu-icon" onClick={toggleMenu}>
           <FaBars className="hamburger" />
         </div>
@@ -26,7 +27,7 @@ const NavBar = () => {
         <div className="bar">Project</div>
         <div className="bar">About us</div>
         <div className="bar">Contact Us</div>
-        <div className="bar signup-btn">Get Started</div>
+        <Link to={'/signup'} ><div className="bar signup-btn">Get Started</div></Link>
       </nav>
     </div>
   );

@@ -1,6 +1,101 @@
-.navbar .menu-icon{
-    width: 1000px;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #f8f9fa;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top */
+    width: 100%;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.welcome-message h2 {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 0px to 575px) */
+@media (max-width: 575px) {
+    .navbar-content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .welcome-message {
+        margin-top: 10px;
+    }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .navbar-content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .welcome-message {
+        margin-top: 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .welcome-message {
+        margin-top: 0;
+    }
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .welcome-message {
+        margin-top: 0;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .navbar-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .welcome-message {
+        margin-top: 0;
+    }
 }

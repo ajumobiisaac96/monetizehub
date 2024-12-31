@@ -17,7 +17,7 @@ const LandingPage = () => {
             <h5><span>.</span>MonetizeHub Marketing Agency</h5>
             <h1>We are available for marketing</h1>
             <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorem quasi dicta a, suscipit minima dolorum corporis expedita eveniet repudiandae tempore quibusdam vitae voluptatum doloremque quo labore excepturi blanditiis amet.</h6>
-            <Link to={"/Dashboard"} ><button className='signup-btn'>Get Started</button></Link>
+            <Link to={"/signup"} ><button className='signup-btn'>Get Started</button></Link>
           </div>
           <div className="hero-right-side">
             <img src={HeroBanner} alt="" />

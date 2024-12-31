@@ -1,19 +1,18 @@
 import React from 'react';
-import '../components/NavBar.css';
-import '../components/DashboardNavbar.css';
+import './DashboardNavbar.css';
+import {Link} from 'react-router-dom'
 
-const NavBar = ({username}) => {
+const DashboardNavbar = ({ username }) => {
   return (
-    <div className="navbar sticky-nav">
-      <nav>
-        <div className="menu-icon">
-            <div><h1>MonetizeHub</h1></div>
-            <div><h2>Welcome,{username}</h2></div>
-        </div>
+    <nav className="navbar sticky-nav">
+      <div className="navbar-content">
+      <div className="logo"><Link to={'/'} ><h1>MonetizeHub</h1></Link></div>
+      <div className="welcome-message"><h2>Welcome, {username}</h2></div>
+      </div>
 
-      </nav>
-    </div>
+
+    </nav>
   );
 };
 
-export default NavBar;
+export default DashboardNavbar;

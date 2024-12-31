@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding: 20px 60px;
     background-color: #f8f9fa;
     width: 100%;
     max-width: 1200px; /* Set a max-width for the hero section */
@@ -100,10 +100,19 @@ body {
     margin: 0 auto; /* Center the services section */
 }
 
+.services-card {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center; /* Center the grid items */
+}
+
 .services h1 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .services h6 {
@@ -148,6 +157,7 @@ body {
     .hero-section {
         flex-direction: column;
         text-align: center;
+        padding: 0px;
     }
 
     .hero-left-side {
@@ -157,6 +167,11 @@ body {
     .hero-right-side {
         text-align: center;
         margin-top: 20px;
+    }
+
+    .services-card{
+        display: flex !important;
+        flex-direction: column;
     }
 
     .cards-container {
