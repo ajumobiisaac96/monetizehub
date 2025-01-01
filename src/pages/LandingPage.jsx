@@ -12,7 +12,7 @@ const LandingPage = () => {
     <div>
       <NavBar />
       <main className='landing-page'>
-        <div className="hero-section">
+        <div className="hero-section home">
           <div className="hero-left-side">
             <h5><span>.</span>MonetizeHub Marketing Agency</h5>
             <h1>We are available for marketing</h1>
@@ -24,7 +24,7 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="services">
+        <div className="services features">
           <h1>Services We Provided</h1>
           <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br /> Eveniet corporis libero ipsam facere quasi accusantium, eos ad officiis nostrum velit?</h6>
 
